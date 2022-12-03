@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+$font-stack: 'Poppins', sans-serif;
+$primary-color: #333;
+$hover-color: rgb(49, 17, 231);
+$button-background:#750a83;
+$button-color:#fff;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+        color: $primary-color;
+        
+    }
+    li{
+        list-style: none;
+    }
+}
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    font-size: 16px;
+    
+  }
+
+@mixin button($btn: $button-color,$btn-background:$button-background) {
+    color: $btn;
+    background: $btn-background;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
